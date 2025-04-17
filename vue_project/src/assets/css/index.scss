@@ -1,7 +1,36 @@
+// 修改变量
 @forward "element-plus/theme-chalk/src/common/var.scss" with (
   $colors: (
     "primary": (
       "base": #0fa4b3,
+      // 主色
+      "light-3": #3cb4c0,
+      // 浅色变体
+      "dark-2": #0c8b97,
+      // 深色变体
     ),
+  ),
+  // 可以添加更多变量覆盖
+  $border-color:
+    (
+      "": #dcdfe6,
+      // 基础边框色
+      "light": #e4e7ed,
+      // 浅边框
+      "lighter": #ebeef5,
+      // 更浅边框
+      "extra-light": #f2f6fc,
+      // 最浅边框
+    ),
+  $input: (
+    "border-color": #dcdfe6,
+    // 输入框边框色
+    "hover-border-color": #c0c4cc,
+    // 悬浮状态
+    "focus-border-color": #0fa4b3,
+    // 聚焦状态(与主色一致)
   )
 );
+
+// 导入所有Element Plus样式
+// @use "element-plus/theme-chalk/src/index.scss" as *;
