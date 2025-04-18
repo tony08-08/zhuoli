@@ -13,9 +13,10 @@
                         </el-select>
                     </template>
                     <template #append>
-                        <el-button style="width:60px;"><el-icon class="el-icon--right" :size="16" @click="handleSearch">
+                        <el-button style="width:60px;" @click="handleSearch"><el-icon class="el-icon--right" :size="16">
                                 <Search />
-                            </el-icon></el-button>
+                            </el-icon>
+                        </el-button>
                     </template>
                 </el-input>
             </div>
